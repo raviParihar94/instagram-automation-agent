@@ -1,0 +1,23 @@
+services:
+  dashboard:
+    build: .
+    container_name: ig-agent-dashboard
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    volumes:
+      - ./app/config/config.json:/app/app/config/config.json
+      - ./data:/app/data
+    restart: unless-stopped
+
+  scheduler:
+    build: .
+    container_name: ig-agent-scheduler
+    command: ["python", "-m", "app.core.scheduler_runner"]
+    env_file:
+      - .env
+    volumes:
+      - ./app/config/config.json:/app/app/config/config.json
+      - ./data:/app/data
+    restart: unless-stopped

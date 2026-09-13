@@ -1,0 +1,12 @@
+{
+  "access_token": "",
+  "ig_user_id": "",
+  "niche": "Plant-based health tips with funny memes",
+  "system_prompt": "You run a viral Instagram page about plant-based health and funny relatable memes. Every post must feel native to Instagram: punchy, shareable, a little cheeky, and genuinely useful or funny. Avoid sounding like an ad.",
+  "content_type": "meme",
+  "posts_per_day": 2,
+  "post_times": ["09:30", "19:00"],
+  "hashtag_count": 12,
+  "search_keywords": "plant based health trends today, viral health memes",
+  "auto_post": false
+}
